@@ -1,3 +1,3 @@
-# git-demo-project
+# ai-sports
 
 A new Git project.
