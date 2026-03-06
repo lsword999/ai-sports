@@ -1,6 +1,14 @@
 """ai-sports package."""
 
-__all__ = ["analyze_match"]
+from .player_management import GPSRecord, PhysicalMetrics, Player, PlayerManager
+
+__all__ = [
+    "GPSRecord",
+    "PhysicalMetrics",
+    "Player",
+    "PlayerManager",
+    "analyze_match",
+]
 
 
 def analyze_match(home_score: int, away_score: int) -> str:
