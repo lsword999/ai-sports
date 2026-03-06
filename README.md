@@ -12,6 +12,15 @@ PYTHONPATH=src python3 -m ai_sports.main
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
+## Web frontend
+
+```bash
+cd /Users/jeffliu/Documents/ai-sports/web
+python3 -m http.server 8080
+```
+
+Open: http://localhost:8080
+
 ## Current scope
 
 - Player management
