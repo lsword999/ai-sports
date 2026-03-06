@@ -16,7 +16,8 @@ PYTHONPATH=src python3 -m unittest discover -s tests
 
 - Player management
 - Physical metrics management
-- GPS vest records for training and matches
+- Session management (training and matches)
+- GPS vest records linked to session
 
 ## Data model
 
@@ -27,9 +28,14 @@ PYTHONPATH=src python3 -m unittest discover -s tests
 - PhysicalMetrics
 - `height_cm`, `weight_kg`, `body_fat_pct`, `resting_heart_rate_bpm`
 
+- Session
+- `session_id`, `session_type` (`training`/`match`), `session_date`, `title`
+- optional: `location`, `opponent`, `notes`
+
 - GPSRecord
-- `record_id`, `player_id`, `session_type` (`training`/`match`)
-- `session_date`, `distance_m`, `max_speed_mps`, `duration_min`
+- `record_id`, `player_id`, `session_id`
+- `session_type` (`training`/`match`), `session_date`
+- `distance_m`, `max_speed_mps`, `duration_min`
 - `sprint_count`, `avg_heart_rate_bpm`, `created_at`
 
 ## Project structure

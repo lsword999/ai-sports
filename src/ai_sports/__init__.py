@@ -1,12 +1,13 @@
 """ai-sports package."""
 
-from .player_management import GPSRecord, PhysicalMetrics, Player, PlayerManager
+from .player_management import GPSRecord, PhysicalMetrics, Player, PlayerManager, Session
 
 __all__ = [
     "GPSRecord",
     "PhysicalMetrics",
     "Player",
     "PlayerManager",
+    "Session",
     "analyze_match",
 ]
 
